@@ -33,7 +33,7 @@ void sorting::input() {
 	cout<<"Masukan banyak data = ";
 	cin>>n;
 
- 	for(i=0;i<n;i++){
+ 	for(i = 0; i < n; i++){
 		cout<<endl;
 		cout<<"Data ke-"<<(i+1)<<":"<<endl;
 		cout<<"Input Kode Barang : ";cin>>barang[i].kode;
@@ -54,8 +54,8 @@ void sorting::input() {
 }
 
 void sorting::proses() {
-	for(i=0;i<n;i++){
-        for(b=0;b<n-1;b++){
+	for(i = 0; i < n; i++){
+        for(b = 0; b < n-1; b++){
 			if(barang[b].stock < barang[b+1].stock){
                 temp.kode=barang[b].kode;
                 barang[b].kode=barang[b+1].kode;
@@ -89,7 +89,7 @@ void sorting::output() {
         cout<<"Masukan ID Barang Untuk Mencari Nama Barang dan Stock Barang : ";
         cin>>cari;
         ada = 0;
-        for(b=0;b<n;b++)
+        for(b = 0; b < n; b++)
             {
             if(barang[b].kode==cari)
                 {
